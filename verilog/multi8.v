@@ -1,11 +1,21 @@
-module multi8 (in1, in2, out);
-input reg[7:0] in1,in2;
-output reg[15:0] out;
-parameter lenth = 7;    //8 位长度
+// 由于想不出来， 预习了下课本 
+parameter size=8, longsize=16
+module multi8 (opa,opb,result)
+input reg [size:1] opa, opb;
+output reg [longsize:1] result;
 
-always @ (in1, in2)
-begin
+begin: mult
+    reg [longsize:1] shift_opa, shift_opb;
+    shift_opa = opa;
+    shift_opb = opb;
+    result = 0;
+    repeat(size)
+    begin
+        if(shift_opb[1])
+            result = result + shift_opa;
 
+        shift_opa = shift_opa << 1;
+        shift_opb = shift_opb >> 1;
+    end
 end
-
 endmodule
