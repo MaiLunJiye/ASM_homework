@@ -1,4 +1,5 @@
 // 由于想不出来， 预习了下课本 
+// 8位移位乘法器
 parameter size=8, longsize=16
 module multi8 (opa,opb,result)
 input reg [size:1] opa, opb;

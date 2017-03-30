@@ -1,4 +1,4 @@
-//共阴极7段管显示
+//共阴极7段管显示测试模块
 module LED_GND_tb();
 reg   [3:0] num;
 wire  [6:0]outCode;

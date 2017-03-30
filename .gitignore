@@ -1,3 +1,8 @@
 tags
 .swp
 output/
+*.txt
+makefile
+*.swp
+.exrc
+

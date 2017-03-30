@@ -1,4 +1,4 @@
-
+//三位投票器模块
 module judge3(in1,in2,in3,out);
     input in1,in2,in3;
     output out;
