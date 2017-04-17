@@ -1,3 +1,7 @@
+/*
+ *完成实验 1, 2, 3， 下面是预制模块，最后3个是实验代码
+ */
+
 //时钟降频  50m hz --> 1hz
 module dicCLK(clk50,clk1);
     input clk50;
@@ -117,6 +121,11 @@ begin
 end
 endmodule
 
+/*
+ *----------------
+ *实验代码
+ *----------------
+ */
 
 //实验1 三极管移动移动输出
 module LEDmov(clk1hz, sw0, hex0, hex1, hex2);
